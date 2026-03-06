@@ -85,11 +85,12 @@
 
     /* ── Eyebrow ── */
     .eyebrow {
-      text-align:center;
       font-family:'Cinzel',serif;
-      font-size:9.5px; letter-spacing:.38em;
-      color:var(--gold); text-transform:uppercase;
-      animation:fadeUp .6s .15s ease both;
+      font-size:clamp(28px,2.5vw,15px);
+      font-weight:400; letter-spacing:.22em;
+      color:var(--gold); line-height:1.5;
+      line-height:2; letter-spacing:-.01em;
+      text-align:center;
     }
 
     /* ── Divider ── */
@@ -99,13 +100,13 @@
 
     /* ── Name — uniform gold ── */
     .name-block { text-align:center; animation:fadeUp .7s .25s ease both; }
-    .presents-line { font-family:'EB Garamond',serif; font-style:italic; font-size:16px; color:var(--mid); margin-bottom:4px; }
+    .presents-line { font-family:'EB Garamond',serif; font-style:italic; font-size:16px; color:var(--mid); margin-bottom:4px; line-height:2; }
     .name-grace {
       font-family:'Playfair Display',serif;
-      font-size:clamp(28px,2.5vw,15px);
+      font-size:clamp(48px,2.5vw,15px);
       font-weight:400; font-style:italic;
       color:var(--gold);
-      line-height:.95; letter-spacing:-.01em;
+      line-height:2; letter-spacing:-.01em;
     }
 
     /* ── Subtitle — uniform gold ── */
@@ -163,8 +164,8 @@
 
     /* ── RSVP ── */
     .rsvp-section { padding-top:28px; border-top:1px solid rgba(168,137,74,.15); animation:fadeUp .7s .6s ease both; }
-    .rsvp-title { text-align:center; font-family:'Cinzel',serif; font-size:10px; letter-spacing:.38em; color:var(--gold); margin-bottom:10px; }
-    .rsvp-note { text-align:center; font-style:italic; font-size:14px; color:var(--mid); margin-bottom:20px; }
+    .rsvp-title { text-align:center; font-family:'Cinzel',serif; font-size:12px; letter-spacing:.38em; color:var(--gold); margin-bottom:10px; }
+    .rsvp-note { text-align:center; font-style:italic; font-size:16px; color:var(--mid); margin-bottom:20px; }
 
     .form-grid { display:grid; gap:16px; }
     .fgroup { display:flex; flex-direction:column; gap:6px; }
@@ -314,26 +315,19 @@
 
       <p class="eyebrow">Gonsalves Family</p>
 
-      <div class="orn"><span>✦ &nbsp; ✦ &nbsp; ✦</span></div>
 
       <div class="name-block">
-        <p class="presents-line">request the honour of your presence at the</p>
-        <div class="name-grace">Grace</div>
+        <p class="presents-line">requests the honor of your presence at the <br>
+                  First Holy Communion of our daughter</p>
+        <div class="name-grace">Grace Gonsalves</div>
       </div>
 
-      <div class="subtitle-block">
-        <h2>Gonsalves</h2>
-        <p>First Holy Communion</p>
-      </div>
-
-      <div class="orn"><span>✦ &nbsp; ✦ &nbsp; ✦</span></div>
 
       <div class="scripture">
         <blockquote>
-          "I am the bread of life. Whoever comes to me will never go hungry,<br/>
-          and whoever believes in me will never be thirsty."
+          "Whoever feeds on this bread will live forever."
         </blockquote>
-        <cite>John 6:35</cite>
+        <cite>John 6:58</cite>
       </div>
 
       <!-- ═══ TWO EVENTS ═══ -->
@@ -397,8 +391,7 @@
 
       <!-- ═══ RSVP ═══ -->
       <div class="rsvp-section">
-        <div class="rsvp-title">— Kindly Reply by April 12th —</div>
-        <p class="rsvp-note">RSVP is for the reception at Zilker Botanical Gardens</p>
+        <div class="rsvp-title">— Kindly RSVP for the reception by April 12th —</div>
 
         <div id="rsvpForm" class="form-grid">
 
