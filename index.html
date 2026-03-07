@@ -164,7 +164,7 @@
 
     /* ── RSVP ── */
     .rsvp-section { padding-top:28px; border-top:1px solid rgba(168,137,74,.15); animation:fadeUp .7s .6s ease both; }
-    .rsvp-title { text-align:center; font-family:'Cinzel',serif; font-size:12px; letter-spacing:.38em; color:var(--gold); margin-bottom:10px; }
+    .rsvp-title { text-align:center; font-family:'Cinzel',serif; font-size:12px; font-weight:500; letter-spacing:.38em; color:var(--gold); margin-bottom:10px; }
     .rsvp-note { text-align:center; font-style:italic; font-size:16px; color:var(--mid); margin-bottom:20px; }
 
     .form-grid { display:grid; gap:16px; }
@@ -367,39 +367,40 @@
 
 
       <!-- ═══ RSVP ═══ -->
+      <div class="event-block">
       <div class="rsvp-section">
         <div class="rsvp-title">— Kindly RSVP for the reception by April 12th —</div>
 
         <div id="rsvpForm" class="form-grid">
 
           <div class="fgroup full">
-            <label for="familyName">Family Name</label>
+            <label style="font-weight:500;" for="familyName">Family Name</label>
             <input type="text" id="familyName" placeholder="The Smith Family"/>
           </div>
 
           <div class="fgroup full">
-            <label>Will you be joining us?</label>
+            <label style="font-weight:500;">Will you be joining us?</label>
             <div class="att-toggle">
               <input type="radio" name="att" id="attY" value="Yes"/>
-              <label for="attY">Joyfully Accepts</label>
-              <input type="radio" name="att" id="attN" value="No"/>
-              <label for="attN">Regretfully Declines</label>
+              <label style="font-weight:800;" for="attY">Joyfully Accepts</label>
+              <input style="font-weight:500;" type="radio" name="att" id="attN" value="No"/>
+              <label style="font-weight:800;" for="attN">Regretfully Declines</label>
             </div>
           </div>
 
           <div class="guest-row" id="guestRow">
             <div class="fgroup">
-              <label for="adults">Number of Adults</label>
-              <input type="number" id="adults" min="0" max="20" placeholder="0"/>
+              <label style="font-weight:500;" for="adults">Number of Adults</label>
+              <input style="font-weight:500;" type="number" id="adults" min="0" max="20" placeholder="0"/>
             </div>
             <div class="fgroup">
-              <label for="children">Number of Children</label>
-              <input type="number" id="children" min="0" max="20" placeholder="0"/>
+              <label style="font-weight:500;" for="children">Number of Children</label>
+              <input style="font-weight:500;" type="number" id="children" min="0" max="20" placeholder="0"/>
             </div>
           </div>
 
           <div class="fgroup full">
-            <label for="msg">Message <span style="opacity:.45;letter-spacing:0;text-transform:none;font-family:'EB Garamond',serif;font-size:13px;">(optional)</span></label>
+            <label style="font-weight:500;" for="msg">Message <span style="opacity:.45;letter-spacing:0;text-transform:none;font-family:'EB Garamond',serif;font-size:13px;font-weight:500;">(optional)</span></label>
             <textarea id="msg" rows="3" placeholder="Dietary needs, a warm wish for Grace…"></textarea>
           </div>
 
@@ -417,6 +418,7 @@
 
     </div>
   </div>
+</div>
 </div>
 
 <script>
